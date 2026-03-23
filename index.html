@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kushi-Katsu Recipe Page</title>
+ <script src="js/picturefill.js"></script>
+ <script src="js/matchmedia.js"></script>
+<style type="text/css">
+@import url("webfonts/Chunkfive_Ex/stylesheet.css");
+@import url("webfonts/DEATHBLOOD/stylesheet.css");
+
+	
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+	
+    body {
+      font-family: Georgia, serif;
+      color: #2c4a5a;
+    }
+	
+	 .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+	
+	.logo {  
+    font-size: 38px;
+    color: #e53935;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-family: DEATHBLOOD;
+    }
+	
+	.header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+	
+	.search-social {
+      display: flex;
+      gap: 24px;
+    }
+	
+	.search-img {
+      height: 20px;
+    }
+	
+	.social-img {
+      height: 16px;
+    }
+	
+	.nav {
+      display: flex;
+      gap: 32px;
+    }
+	
+	.nav a {
+      color: #e53935;
+      text-decoration: none;
+	  font-family: Rockwell;
+      font-size: 14px;
+      font-weight: bold;
+	}
+	main {
+    }
+	 #hero-banner {
+      width: 100%;
+    }
+	#hero-banner img {
+      width: 100%;
+      display: block;
+    }
+	
+	.recipe-content {
+      display: flex;
+      padding: 24px 48px;
+      gap: 32px;
+	  background-color: #f3e8cf;
+    }
+	
+	.ingredients {
+      flex-shrink: 0;
+      width: 200px;
+    }
+	
+     .ingredients h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .ingredients ul {
+      list-style: none;
+      font-size: 12px;
+      line-height: 1.6;
+      white-space: nowrap;
+    }
+	
+	 .recipe-details {
+     margin-left: 40px;
+    }
+	
+     .recipe-details h1 {
+     font-size: 28px;
+     font-weight: normal;
+     margin-bottom: 4px;
+     font-family: Rockwell;
+    }
+	
+     .description {
+      color: #2c4a5a;
+      font-size: 16px;
+	  font-style: italic;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+	
+	.timing {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .instructions {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .instructions p {
+      margin-bottom: 10px;
+    }
+	
+	.gallery {
+      display: flex;
+	  flex-wrap: wrap;
+      gap: 16px;
+      padding: 24px;
+    }
+
+    .gallery-item {
+      flex: 0 0 100%;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }	
+	.header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .header-right {
+      align-items: center;
+    }
+
+    .nav {
+      gap: 16px;
+    }
+
+    .recipe-content {
+      flex-direction: column;
+      gap: 16px;
+      padding: 20px 16px;
+    }
+	.recipe-details {
+      margin-left: 0;
+    }
+
+    .ingredients ul, .description, .timing, .instructions {
+      font-size: 14px;
+    }
+
+    .recipe-details h1 {
+      font-size: 24px;
+    }
+   @media (min-width: 50em) {
+      .header {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .header-right {
+        align-items: flex-end;
+      }
+
+      .nav {
+        gap: 32px;
+      }
+	   .recipe-content {
+        flex-direction: row;
+        gap: 32px;
+        padding: 24px 48px;
+      }
+
+      .recipe-details {
+        margin-left: 40px;
+      }
+
+      .ingredients ul, .description, .timing, .instructions {
+        font-size: 13px;
+      }
+
+      .recipe-details h1 {
+        font-size: 28px;
+      }
+
+      .gallery-item {
+        flex: 0 0 calc(50% - 8px);
+      }
+	   
+	  .gallery-item:last-child {
+        flex: 0 0 50%;
+        margin: 0 auto;
+      }
+
+      .gallery-item img {
+        aspect-ratio: 4/3;
+      }
+    }
+@media (min-width: 65em) {
+      .gallery-item {
+        flex: 0 0 calc(33.333% - 11px);
+      }
+
+      .gallery-item:last-child {
+        flex: 0 0 calc(33.333% - 11px);
+        margin: 0;
+      }
+    }
+	@media (min-width: 80em) {
+      .gallery {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 24px 48px;
+      }
+
+      .gallery-item {
+        flex: 0 0 calc(25% - 12px);
+      }
+
+      .gallery-item:last-child {
+        flex: 0 0 calc(25% - 12px);
+        margin: 0;
+      }
+    }
+	  .footer {
+      background-color: #6b6b6b;
+      color: #fff;
+      text-align: center;
+      padding: 20px 24px;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+
+    .footer p {
+      margin-bottom: 8px;
+    }	
+    .footer .disclaimer {
+      margin-bottom: 0;
+    }
+</style>
+</head>
+
+<body>
+	 <header class="header">
+    <div class="logo">KUSHI-KATSU</div>
+    <div class="header-right">
+      <div class="search-social">
+        <img src="search.png" alt="Search recipes and more" class="search-img">
+        <img src="connect.png" alt="Social media links" class="social-img">
+      </div>
+      <nav class="nav">
+        <a href="#">what's new</a>
+        <a href="#">recipes</a>
+        <a href="#">meal planning</a>
+        <a href="#">about us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+	 <figure id="hero-banner">
+      <picture>
+        <source media="(min-width: 72em)" srcset="main_large.png">
+        <source media="(min-width: 32em)" srcset="main_medium.png">
+        <img src="main_small.png" alt="Salmon Ochazuke - Japanese rice bowl with salmon and green tea">
+      </picture>
+    </figure>
+	
+	<section class="recipe-content">
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 cup Dashi</li>
+        <li>1/2 cup green tea</li>
+        <li>1 teaspoon sake</li>
+        <li>1 teaspoon white tamari</li>
+        <li>2 teaspoons soy sauce</li>
+        <li>1 cup cooked rice</li>
+        <li>2 oz broiled salmon</li>
+        <li>1 umeboshi, rough chopped</li>
+        <li>2 teaspoons sliced scallions</li>
+        <li>Furikake, to taste</li>
+      </ul>
+    </div>
+    <div class="recipe-details">
+      <h1>Salmon Ochazuke</h1>
+      <p class="description">Ochazuke (お茶漬け) is the ultimate Japanese comfort food - Ocha refers to green tea, and zuke means “submerged.” Ochazuke is a simple one-bowl dish featuring steamed rice with an assortment of savory ingredients, partially steeped in green tea or dashi (Japanese soup stock). </p>
+      <p class="timing">Prep: 5 mins &nbsp; Cook: 5 mins &nbsp; Total: 10 mins</p>
+      <div class="instructions">
+        <p>In a small saucepot combine the dashi, green tea, sake, mirin, white tamari and soy sauce and bring to a simmer.</p> 
+		<p>In a small serving bowl big enough to hold the rice and broth, add the steamed rice and then pour over the dashi/tea broth combination.</p>
+        <p>Place the broiled salmon in the middle of the bowl, then the chopped umeboshi next to the salmon, and on the opposite side add the sliced scallions.</p>
+        <p>Sprinkle with furikake and enjoy!</p>
+      </div>
+    </div>
+  </section>
+	
+	 <section class="gallery">
+    <div class="gallery-item">
+      <img src="group1.jpg" alt="Salmon Ochazuke ingredients laid out">
+    </div>
+	 <div class="gallery-item">
+      <img src="group-2.jpg" alt="Salmon Ochazuke bowl from above">
+    </div>
+    <div class="gallery-item">
+      <img src="group3.jpg" alt="Salmon rice bowl with tea being poured">
+    </div>
+  </section>
+</main>
+	
+<footer class="footer">
+	   <div class="copyright">&copy; 2026, Tanya Passidore</div>
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.
+	</footer>
+</body>
+</html>
